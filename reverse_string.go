@@ -7,5 +7,10 @@ func ReverseString(input string) (output string) {
 		reverseBytes = append(reverseBytes, bytes[i-1])
 	}
 
-	return string(reverseBytes)
+	str := ""
+	for _, r := range reverseBytes {
+		str += string(r)
+	}
+
+	return str
 }
